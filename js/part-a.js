@@ -2,7 +2,7 @@ console.log("DOM lab ready");
 
 
 
-// A2 
+//__A2______________________________________ 
 
 const title = document.getElementById("title");
 const firstItem = document.querySelector("#menu-list li");
@@ -24,3 +24,21 @@ console.log(tagline);
 console.log(menuList);
 console.log(menuItems);
 console.log(message);
+
+
+
+
+//__A3______________________________________ 
+
+title.textContent = "Lagoon Café · Open now";
+tagline.textContent = "Fresh food by the lagoon since 2010.";
+
+menuItems.forEach((item, index) => {
+    item.textContent = `${index + 1}. ${item.textContent}`;
+});
+
+message.innerHTML = "<strong>Welcome!</strong> Today's special is crab curry.";
+
+
+const nameBox = document.getElementById("name-input");
+console.log(nameBox.value);
