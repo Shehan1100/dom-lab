@@ -1,4 +1,3 @@
-
 console.log("DOM lab ready");
 
 
